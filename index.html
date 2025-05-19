@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="SweetBloom Bakery - Premium artisanal pastries, cakes, and cookies crafted with passion since 2010.">
+  <meta name="keywords" content="bakery, pastries, cakes, cookies, artisanal, SweetBloom, Pastryville">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdnjs.cloudflare.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' https://images.pexels.com https://www.google.com https://maps.gstatic.com https://maps.googleapis.com; frame-src https://www.google.com; connect-src 'self' https://www.google.com;">
+  <title>SweetBloom Bakery</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#" class="logo" aria-label="SweetBloom Bakery Home">SweetBloom</a>
+      <div class="nav-links">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#shop">Shop</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="social-links">
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        </div>
+        <div class="nav-icons">
+          <button id="wishlist-btn" aria-label="View Wishlist">
+            <i class="fas fa-heart"></i>
+            <span id="wishlist-count" class="count-badge">0</span>
+          </button>
+          <button id="cart-btn" aria-label="View Cart">
+            <i class="fas fa-shopping-cart"></i>
+            <span id="cart-count" class="count-badge">0</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero-section">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <div>
+        <h1 class="animate-hero">Artisanal Perfection</h1>
+        <p class="hero-subheading animate-hero">Baking with Love Since 2010</p>
+        <p class="hero-text animate-hero">Indulge in SweetBloom’s Finest Creations</p>
+        <a href="#shop" class="hero-btn animate-hero">Discover Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us -->
+  <section class="why-choose-us">
+    <div class="section-container">
+      <h2>Why Choose SweetBloom</h2>
+      <div class="features">
+        <div class="feature">
+          <i class="fas fa-leaf"></i>
+          <h3>Quality Ingredients</h3>
+          <p>Sourced from the finest local farms for unmatched flavor.</p>
+        </div>
+        <div class="feature">
+          <i class="fas fa-hammer"></i>
+          <h3>Expert Craftsmanship</h3>
+          <p>Handcrafted with passion by our skilled bakers.</p>
+        </div>
+        <div class="feature">
+          <i class="fas fa-clock"></i>
+          <h3>Fresh Daily</h3>
+          <p>Baked fresh every morning for your enjoyment.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials">
+    <div class="section-container">
+      <h2>What Our Customers Say</h2>
+      <div class="testimonial-grid">
+        <div class="testimonial-card">
+          <p>"The best croissants I’ve ever had! So flaky and fresh."</p>
+          <p class="author">— Sarah M.</p>
+        </div>
+        <div class="testimonial-card">
+          <p>"SweetBloom’s cakes made my wedding unforgettable."</p>
+          <p class="author">— Anil R.</p>
+        </div>
+        <div class="testimonial-card">
+          <p>"Gluten-free options that actually taste amazing!"</p>
+          <p class="author">— Priya K.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Local Presence -->
+  <section class="local-presence">
+    <div class="section-container">
+      <h2>Visit Us in Pastryville</h2>
+      <p class="address">123 Sweet Street, Pastryville, USA</p>
+      <p class="hours">Open: Mon-Sat, 8 AM - 6 PM</p>
+      <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509826!2d144.9537353153169!3d-37.81621897975195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f0d1b7d%3A0x5045675218ce6e0!2sMelbourne%20VIC%2C%20Australia!5e0!3m2!1sen!2sus!4v1697041234567!5m2!1sen!2sus" 
+                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer" sandbox="allow-same-origin allow-scripts" title="SweetBloom Bakery Location">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Shop Section -->
+  <section id="shop" class="shop-section">
+    <div class="section-container">
+      <h2>Our Collection</h2>
+      <!-- Category Tabs -->
+      <div class="category-tabs">
+        <button class="category-tab active" data-category="all">All</button>
+        <button class="category-tab" data-category="pastries">Pastries</button>
+        <button class="category-tab" data-category="cakes">Cakes</button>
+        <button class="category-tab" data-category="cookies">Cookies</button>
+      </div>
+      <!-- Search and Filters -->
+      <div class="filters">
+        <div class="search-wrapper">
+          <input type="text" id="search-bar" placeholder="Search products..." aria-label="Search products">
+        </div>
+        <div class="filter-options">
+          <select id="dietary-filter">
+            <option value="all">All Dietary</option>
+            <option value="gluten-free">Gluten-Free</option>
+          </select>
+          <select id="sort-by">
+            <option value="default">Sort By</option>
+            <option value="price-low">Price: Low to High</option>
+            <option value="price-high">Price: High to Low</option>
+          </select>
+        </div>
+      </div>
+      <!-- Product Grid -->
+      <div id="product-grid" class="product-grid"></div>
+      <!-- Pagination -->
+      <div id="pagination" class="pagination"></div>
+    </div>
+  </section>
+
+  <!-- Cart Sidebar -->
+  <div id="cart-sidebar" class="sidebar">
+    <div class="sidebar-header">
+      <h2>Your Cart</h2>
+      <button id="close-cart" aria-label="Close Cart"><i class="fas fa-times"></i></button>
+    </div>
+    <div id="cart-items"></div>
+    <p class="cart-total">Total: $<span id="cart-total">0.00</span></p>
+    <button id="checkout-btn" class="sidebar-btn">Proceed to Checkout</button>
+  </div>
+
+  <!-- Wishlist Sidebar -->
+  <div id="wishlist-sidebar" class="sidebar">
+    <div class="sidebar-header">
+      <h2>Your Wishlist</h2>
+      <button id="close-wishlist" aria-label="Close Wishlist"><i class="fas fa-times"></i></button>
+    </div>
+    <div id="wishlist-items"></div>
+  </div>
+
+  <!-- Footer -->
+  <footer id="footer">
+    <div class="footer-container">
+      <div class="footer-column">
+        <h3>SweetBloom Bakery</h3>
+        <p>123 Sweet Street, Pastryville, USA</p>
+        <p>Email: hello@sweetbloom.com</p>
+        <p>Phone: (123) 456-7890</p>
+      </div>
+      <div class="footer-column">
+        <h4>Stay Updated</h4>
+        <div class="newsletter">
+          <input type="email" placeholder="Your email" aria-label="Newsletter email">
+          <button type="submit">Join Now</button>
+        </div>
+      </div>
+      <div class="footer-column">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#shop">Shop</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Follow Us</h4>
+        <div class="footer-social">
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+    </div>
+    <p class="footer-copy">© 2025 SweetBloom Bakery. All rights reserved.</p>
+  </footer>
+</body>
+</html>
